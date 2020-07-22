@@ -4,7 +4,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   box-sizing: border-box;
   color: white;
   overflow-x: hidden;
@@ -52,6 +52,17 @@ section#footer h4 {
   font-size: 2.5rem;
   line-height: 120%;
 }
+
+section#about__me p,
+section#contact p,
+section#footer p {
+  line-height: 120%;
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
 /* end of global styles */
 
 /* start of hero styles */
@@ -76,6 +87,16 @@ section#hero .full-bg-image {
   -o-background-size: cover;
   background-size: cover;
 }
+
+section#hero .overlay {
+  background: rgba(0, 0, 0, 0.1);
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* end of hero styles */
 
 /* start of portfolio section styles */
@@ -123,6 +144,7 @@ section#portfolio .gallery__item:hover .image img {
 .height__3 {
   grid-row: span 3;
 }
+
 /* end of portfolio section styles */
 
 /* start of services section styles */
@@ -163,12 +185,16 @@ section#services .services__item .text {
   z-index: 5;
   /* makes sure text is infront of image when we start doing some animating */
   transition: .3s ease-in-out;
-  backdrop-filter: blur(1px) saturate(1.8);
+  backdrop-filter: blur(.5px) saturate(1.0);
   color: white;
   padding: 0rem;
-  -webkit-backdrop-filter: blur(1px) saturate(1.8);
-  padding-left: 5rem;
+  -webkit-backdrop-filter: blur(.5px) saturate(1.0);
+  /* padding-left: 5rem; */
+  text-shadow: .1rem .1rem .1rem black;
+  text-align: center;
+  align-items: center;
 }
+
 /* end of services section styles */
 
 /* start of blog section styles */
@@ -178,22 +204,153 @@ section#blog p {
   font-weight: normal;
   font-size: 1.25rem;
 }
+
 /* end of blog section styles */
 
-/* start of contact section styles */
-section#contact p {
-  line-height: 120%;
-  font-family: 'Rubik';
-  font-weight: 500;
-  font-size: 1.75rem;
-}
-/* end of contact section styles */
 
-/* start of footer section styles */
-section#footer p {
-  line-height: 120%;
-  font-family: 'Rubik';
-  font-weight: normal;
-  font-size: 1.75rem ;
+
+/* START OF MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  section#hero p {
+    font-size: 1.563rem;
+  }
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 2.5rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1.3rem;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    font-size: 1rem;
+  }
+
+  section#about__me img.d-block {
+    width: 20rem;
+    height: auto;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 13.938rem;
+  }
+
+  section#blog p {
+    font-size: .8rem;
+  }
+
+  section#footer img.p-4 {
+   padding: 1rem !important;
+
+  }
 }
-/* end of footer section styles */
+
+@media screen and (max-width:992px) {
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 2rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1rem;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    font-size: .8rem;
+  }
+
+  section#about__me img.d-block {
+    width: 12rem;
+    height: auto;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 10rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 1.7rem;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1.5rem;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    font-size: .8rem;
+  }
+
+  section#hero p {
+    font-size: 1.3rem;
+  }
+
+  section#about__me .mx-5 {
+    margin: 0 !important;
+  }
+
+  section#about__me .row .paragraph {
+    margin-bottom: 10%;
+  }
+
+  section#about__me img.d-block {
+    width: 80%;
+    height: auto;
+  }
+
+  section#portfolio .container-fluid.p-5,
+  section#services .container-fluid.p-5,
+  section#contact .container-fluid.p-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 6rem;
+  }
+
+  section#blog .px-md-5 {
+    padding-left: 0 !important;
+  }
+
+  section#blog .card {
+    margin-bottom: 2rem;
+  }
+
+  section#blog .card img {
+    margin-bottom: .5rem;
+  }
+}
+
+/* END OF MEDIA QUERIES */
