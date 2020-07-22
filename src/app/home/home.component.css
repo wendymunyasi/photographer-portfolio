@@ -1,0 +1,199 @@
+/* start of global styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: inherit;
+  background-color: #18191D;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-style: normal !important;
+}
+
+section#about__me,
+section#portfolio,
+section#services,
+section#blog,
+section#footer,
+section#contact,
+.card {
+  background-color: #18191D;
+}
+
+section#about__me h1,
+section#portfolio h1,
+section#services h1,
+section#blog h1,
+section#contact h1 {
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 120%;
+  font-family: 'Rubik';
+}
+
+section#about__me h2,
+section#services p,
+section#blog h4,
+section#footer h4 {
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+/* end of global styles */
+
+/* start of hero styles */
+section#hero {
+  height: 100%;
+}
+
+section#hero p {
+  font-weight: 500;
+  font-size: 3.125rem;
+  line-height: 140%;
+  height: 100%;
+  font-family: 'Rubik';
+}
+
+section#hero .full-bg-image {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/img/hero.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* end of hero styles */
+
+/* start of portfolio section styles */
+section#portfolio #portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 19.938rem;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+section#portfolio .gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section#portfolio .gallery__item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section#portfolio .gallery__item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+section#portfolio .gallery__item:hover .image img {
+  transform: scale(1.1);
+}
+
+.height__1 {
+  grid-row: span 1;
+}
+
+.height__2 {
+  grid-row: span 2;
+}
+
+.height__3 {
+  grid-row: span 3;
+}
+/* end of portfolio section styles */
+
+/* start of services section styles */
+section#services .services__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section#services .services__item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section#services .services__item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+section#services .services__item:hover .image img {
+  transform: scale(1.2);
+}
+
+section#services .services__item .text {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  /* makes the text now be at the center */
+  pointer-events: none;
+  /* makes sure text does not receive any clicks */
+  z-index: 5;
+  /* makes sure text is infront of image when we start doing some animating */
+  transition: .3s ease-in-out;
+  backdrop-filter: blur(1px) saturate(1.8);
+  color: white;
+  padding: 0rem;
+  -webkit-backdrop-filter: blur(1px) saturate(1.8);
+  padding-left: 5rem;
+}
+/* end of services section styles */
+
+/* start of blog section styles */
+section#blog p {
+  line-height: 120%;
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+/* end of blog section styles */
+
+/* start of contact section styles */
+section#contact p {
+  line-height: 120%;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+/* end of contact section styles */
+
+/* start of footer section styles */
+section#footer p {
+  line-height: 120%;
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-size: 1.75rem ;
+}
+/* end of footer section styles */
