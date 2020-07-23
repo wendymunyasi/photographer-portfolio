@@ -31,7 +31,6 @@ section#contact h1 {
   font-weight: 500;
   font-size: 3.75rem;
   line-height: 120%;
-  font-family: 'Rubik';
 }
 
 section#header h1,
@@ -39,7 +38,6 @@ section#about__me h2,
 section#services p,
 section#blog h4,
 section#footer h4 {
-  font-family: 'Rubik';
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 120%;
@@ -49,7 +47,6 @@ section#about__me p,
 section#contact p,
 section#footer p {
   line-height: 120%;
-  font-family: 'Rubik';
   font-weight: normal;
   font-weight: 500;
   font-size: 1.75rem;
@@ -79,7 +76,6 @@ section#footer p {
 }
 
 section#header a.navbar-brand {
-  font-family: 'Rubik' !important;
   font-weight: 500 !important;
   font-size: 2.5rem !important;
   line-height: 120% !important;
@@ -87,7 +83,6 @@ section#header a.navbar-brand {
 
 section#header .nav-item a {
   line-height: 120%;
-  font-family: 'Rubik';
   font-size: 2rem;
   font-weight: normal;
   padding-left: 2.5rem;
@@ -106,7 +101,6 @@ section#hero p {
   font-size: 3.125rem;
   line-height: 140%;
   height: 100%;
-  font-family: 'Rubik';
   text-shadow: .1rem .1rem .1rem black;
 }
 
@@ -133,6 +127,10 @@ section#hero .overlay {
 /* end of hero styles */
 
 /* start of portfolio section styles */
+section#portfolio {
+  padding-bottom: 4rem;
+}
+
 section#portfolio #portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -176,6 +174,25 @@ section#portfolio .gallery__item:hover .image img {
 
 .height__3 {
   grid-row: span 3;
+}
+
+section#portfolio .carousel-indicators .active {
+  background: #ffffff;
+  color: #18191D !important;
+}
+
+section#portfolio .carousel-indicators > li {
+  background: #18191D;
+  color: white !important;
+  text-align: center;
+  font-size: 1rem;
+  text-indent: 0;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border-radius: 17%;
+  z-index: 99;
+  border: 2px solid white;
+  overflow: hidden !important;
 }
 /* end of portfolio section styles */
 
@@ -230,7 +247,6 @@ section#blog .card {
 
 section#blog p {
   line-height: 120%;
-  font-family: 'Rubik';
   font-weight: normal;
   font-size: 1.25rem;
 }
