@@ -1,0 +1,15 @@
+body, html {
+  background-color: #18191D !important;
+  color: white !important;
+}
+
+section#header .bg-transparent > body {
+  background-color: #ffffff;
+  color:#18191D;
+}
+
+.light-mode {
+  background-color: #ffffff !important;
+  color: #18191D !important;
+}
+
