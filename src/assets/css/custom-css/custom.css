@@ -1,6 +1,7 @@
 body, html {
   background-color: #18191D !important;
   color: white !important;
+  font-family: 'Rubik';
 }
 
 section#header .bg-transparent > body {
