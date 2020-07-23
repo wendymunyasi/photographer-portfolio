@@ -57,6 +57,7 @@ section#footer p {
   font-weight: 500;
   font-size: 1.75rem;
 }
+
 /* end of global styles */
 
 /* start of header styles */
@@ -74,6 +75,7 @@ section#header .nav-item a {
   padding-right: 2.5rem;
   letter-spacing: 1px;
 }
+
 /* end of header styles */
 
 /* start of hero styles */
@@ -101,6 +103,7 @@ section#hero .full-bg-image {
   object-fit: cover;
   object-position: 50% 50%;
 }
+
 /* end of hero styles */
 
 /* start of portfolio section styles */
@@ -158,7 +161,7 @@ section#portfolio .carousel-indicators .active {
   color: #18191D !important;
 }
 
-section#portfolio .carousel-indicators > li {
+section#portfolio .carousel-indicators>li {
   background: #18191D;
   color: white !important;
   text-align: center;
@@ -171,6 +174,7 @@ section#portfolio .carousel-indicators > li {
   border: 2px solid white;
   overflow: hidden !important;
 }
+
 /* end of portfolio section styles */
 
 /* start of services section styles */
@@ -225,6 +229,7 @@ section#services .services__item .text {
   text-align: center;
   align-items: center;
 }
+
 /* end of services section styles */
 
 /* start of blog section styles */
@@ -237,7 +242,25 @@ section#blog p {
   font-weight: normal;
   font-size: 1.25rem;
 }
+
 /* end of blog section styles */
+
+
+@media only screen and (min-width:1500px) {
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 30.938rem !important;
+    ;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    line-height: 120%;
+    font-weight: normal;
+    font-weight: 500;
+    font-size: 2.3rem;
+  }
+}
 
 
 
