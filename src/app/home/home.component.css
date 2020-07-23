@@ -411,8 +411,12 @@ section#blog p {
     margin-bottom: 2rem;
   }
 
-  section#blog .card img {
+  section#blog .card img.card-img-top {
     margin-bottom: .5rem;
+  }
+
+  section#blog .card img.comments {
+    width: .8rem;
   }
 
   section#contact p {
@@ -493,6 +497,10 @@ section#blog p {
 
   section#blog p {
     font-size: .45rem;
+  }
+
+  section#blog .card img.comments {
+    width: .6rem;
   }
 }
 
