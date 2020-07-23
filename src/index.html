@@ -62,37 +62,7 @@
       });
     });
   </script>
-
-  <!-- smart scroll script -->
-  <script>
-    $(function () {
-      var scroll = $(document).scrollTop();
-      var navHeight = $('.smart-scroll').outerHeight();
-
-      $(window).scroll(function () {
-        var scrolled = $(document).scrollTop();
-
-        if (scrolled > navHeight) {
-          $('.smart-scroll').addClass('animate');
-        } else {
-          $('.smart-scroll').removeClass('animate')
-        }
-        if (scrolled > scroll) {
-          $('.smart-scroll').removeClass('sticky');
-        } else {
-          $('.smart-scroll').addClass('sticky');
-        }
-      });
-    });   
-  </script>
-
-  <!-- dark mode -->
-  <script>
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("light-mode");
-    } 
-  </script>
+  
 </body>
 
 </html>
