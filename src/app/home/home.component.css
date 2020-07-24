@@ -246,7 +246,7 @@ section#blog p {
 /* end of blog section styles */
 
 
-@media only screen and (min-width:1500px) {
+@media only screen and (min-width:2000px) { 
   section#portfolio #portfolio__container {
     grid-auto-rows: 30.938rem !important;
     ;
