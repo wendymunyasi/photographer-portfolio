@@ -103,8 +103,14 @@ section#hero .full-bg-image {
   object-fit: cover;
   object-position: 50% 50%;
 }
-
 /* end of hero styles */
+
+/* start of about me section styles */
+section#about__me img.d-block {
+  color: rgba(196, 196, 196, 0.2);
+  box-shadow: -3.188rem 2.75rem;
+}
+/* end of about me section styles */
 
 /* start of portfolio section styles */
 section#portfolio {
@@ -290,12 +296,16 @@ section#blog p {
   section#about__me p,
   section#contact p,
   section#footer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   section#about__me img.d-block {
     width: 20rem;
     height: auto;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -2.5rem 2rem;
   }
 
   section#portfolio #portfolio__container {
@@ -338,6 +348,10 @@ section#blog p {
   section#about__me img.d-block {
     width: 12rem;
     height: auto;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1.5rem 1rem;
   }
 
   section#portfolio #portfolio__container {
@@ -412,7 +426,15 @@ section#blog p {
   section#about__me img.d-block {
     width: 100%;
     height: auto;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1.9rem 1.74rem;
+  }
+
+  section#about__me .row .pr-5 {
+    padding-right: 0 !important;
   }
 
   section#portfolio .container-fluid.p-5,
@@ -508,14 +530,18 @@ section#blog p {
     padding-right: 2rem !important;
   }
 
-  section#portfolio #portfolio__container {
-    grid-auto-rows: 2rem;
-  }
-
   section#contact p,
   section#footer p,
   section#about__me p {
     font-size: .6rem;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1rem 1rem;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 2rem;
   }
 
   section#blog p {
