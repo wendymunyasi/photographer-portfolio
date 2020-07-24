@@ -35,7 +35,7 @@ section#services h1,
 section#blog h1,
 section#contact h1 {
   font-weight: 500;
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 120%;
 }
 
@@ -45,7 +45,7 @@ section#services p,
 section#blog h4,
 section#footer h4 {
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 120%;
 }
 
@@ -55,7 +55,7 @@ section#footer p {
   line-height: 120%;
   font-weight: normal;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 /* end of global styles */
@@ -63,13 +63,13 @@ section#footer p {
 /* start of header styles */
 section#header a.navbar-brand {
   font-weight: 500 !important;
-  font-size: 2.5rem !important;
+  font-size: 1.5rem !important;
   line-height: 120% !important;
 }
 
 section#header .nav-item a {
   line-height: 120%;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: normal;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -86,7 +86,7 @@ section#hero {
 
 section#hero p {
   font-weight: 500;
-  font-size: 3.125rem;
+  font-size: 2rem;
   line-height: 140%;
   height: 100%;
   text-shadow: .1rem .1rem .1rem black;
@@ -290,13 +290,13 @@ section#blog p {
   section#services p,
   section#blog h4,
   section#footer h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   section#about__me p,
   section#contact p,
   section#footer p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   section#about__me img.d-block {
