@@ -73,7 +73,7 @@ body {
 	color: #f39c12;
 }
 
-
+section#hero .container-fluid,
 section#about__me,
 section#portfolio,
 section#services,
@@ -110,7 +110,7 @@ section#footer p {
   line-height: 120%;
   font-weight: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 /* end of global styles */
@@ -144,7 +144,7 @@ section#hero p {
   font-size: 2rem;
   line-height: 140%;
   height: 100%;
-  text-shadow: .1rem .1rem .1rem black;
+  width: 56.875rem;
 }
 
 section#hero .full-bg-image {
@@ -288,7 +288,6 @@ section#services .services__item .text {
   color: white;
   padding: 0rem;
   -webkit-backdrop-filter: blur(.5px) saturate(1.0);
-  text-shadow: .1rem .1rem .1rem black;
   text-align: center;
   align-items: center;
 }
@@ -321,7 +320,7 @@ section#blog p {
   }
 
   section#hero p {
-    font-size: 4rem;
+    font-size: 3.125rem;
   }
 
   section#header h1 {
