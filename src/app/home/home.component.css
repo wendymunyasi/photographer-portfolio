@@ -295,7 +295,7 @@ section#services .services__item .text {
 
 /* start of blog section styles */
 section#blog .card {
-  background-color: #18191D;
+  background-color: transparent;
 }
 
 section#blog p {
