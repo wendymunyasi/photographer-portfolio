@@ -17,7 +17,7 @@ This is a website to show case a photographer's portfolio.
     8. Make a Pull request for the master branch. 
 
 ## Design
-    (https://www.figma.com/file/RPunIneR02V6EOXQXttJzl/Photography-Portfolio-10?node-id=0%3A1)
+    https://www.figma.com/file/RPunIneR02V6EOXQXttJzl/Photography-Portfolio-10?node-id=0%3A1
 
 
 ##  Deployment
